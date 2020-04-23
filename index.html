@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ELCLOB</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <section id="inicio" class="contenedor nav">
+                <div class="logo">
+                    <!-- <img src="img/logo-jordan-alexander.png" alt=""> -->
+                    <!-- <h1 class="clob">ELCLOB</h1> -->
+                    <span style="--i:1;">E</span>
+                    <span style="--i:2;">L</span>
+                    <span style="--i:3;">C</span>
+                    <span style="--i:4;">L</span>
+                    <span style="--i:5;">O</span>
+                    <span style="--i:6;">B</span>
+                </div>
+                <div class="enlaces-header car">
+                    <a href="#">Inicio</a>
+                    <a href="#tienda">Tienda</a>
+                    <a href="#inicio">
+                      <form class="carrito" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                      <input type="image" src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/orange_shoppictcart_1484336529.png" width="45" title="Ver carrito" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                      <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+                    </a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>
+        </nav>
+        <div class="contenedor">
+            <section class="contenido-header">
+                <section class="textos-header">
+                    <h1>Hola, bienvenido</h1>
+                    <p>Llenate de conocimientos, entretenimiento, y de valor!</p>
+                    <a href="#tienda"><i class="fas fa-arrow-down"></i>bajar</a>
+                </section>
+                <img src="img/enseñar.svg" alt="">
+            </section>
+        </div>
+    </header>
+    <section id="tienda" class="section-tienda about-us">
+        <div class="contenedor1">
+            <h2  class="titulo">Tienda</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right">
+                    <!-- <i class="fas fa-pen-fancy"></i> -->
+                    <i class="fas fa-dice-two"></i>
+                    <h3>Audífonos gratis + Mousepad gaming</h3>
+                    <p>Espectacular mousepad con led (varios colores) para una experiencia gaming y audífonos gratis de alta gama.</p>
+                    <b>$292</b> <br> <br>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="3C3NRUANE2BVU">
+                    <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <!-- <i class="fas fa-code"></i> -->
+                    <i class="fas fa-home"></i>
+                    <h3>10 libros gratis + curso de marketing digital</h3>
+                    <p>En este curso aprenderas como dominar el campo de la publicidad, como llegar a mas clientes,
+                    tambien te regalamos libros que hablan sobre secretos y trucos de marketing.</p>
+                    <b>$129</b> <br> <br>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="Q54QURVDAE6NE">
+                    <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <!-- <i class="fas fa-code"></i> -->
+                    <i class="fas fa-home"></i>
+                    <h3>5 libros gratis + curso de bienes raices</h3>
+                    <p>En este curso completo de bienes raices aprenderas como invertir sabiamente,
+                    como comenzar en el factor de bienes raices sin dinero + 5 libros de conocimientos.</p>
+                    <b>$129</b> <br> <br>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="6FEEK5YQUBXVY">
+                    <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <!-- <i class="fas fa-cog"></i> -->
+                    <i class="fas fa-tv"></i>
+                    <h3>Entretenimiento Blim</h3>
+                    <p>En esta cuarentena no te quedes aburrido, busca entretenimiento,
+                      series, programas, peliculas,
+                    adquiere 1 mes de Blim por un precio especial.</p>
+                    <b>$99</b> <br> <br>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="6X4HKCC4Z94LC">
+                    <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
+                <!-- <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Read more ---></a>
+                </div>
+                <!-- <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-comments"></i>
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Read more ---></a>
+                </div>
+                <!-- <div class="articulo" data-aos="zoom-in-right">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Inphografics</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus maxime eius quo
+                        consequuntur magni. Quis voluptate repudiandae soluta quod mollitia!</p>
+                    <a href="#">Read more ---></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="questions contenedor">
+        <section class="textos-questions">
+            <h1>Our creativity is your success</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolorum.</p>
+            <a href="#">Learn more</a>
+        </section>
+        <img src="img/segundaIlustracion.svg" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
+    </section> -->
+
+    <!-- <section class="results">
+        <div class="contenedor1 conten-results">
+            <section class="numbers">
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <h4>+8863</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, id.</p>
+                </div>
+            </section>
+            <section class="results-text">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet sequi nihil unde.</p>
+                <a href="#">Ingrese aquí</a>
+            </section>
+        </div>
+    </section> -->
+
+    <!-- <section class="contenedor1 services">
+        <img src="img/terceraIlustracion.svg" alt="">
+        <div class="box-skills">
+            <h4><i class="far fa-check-circle"></i> Web design</h4>
+            <h4><i class="far fa-check-circle"></i> Web development</h4>
+            <h4><i class="far fa-check-circle"></i> SEO</h4>
+            <h4><i class="far fa-check-circle"></i> Marketing</h4>
+            <h4><i class="far fa-check-circle"></i> Web support</h4>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="partFooter">
+            <!-- <img src="img/logo-jordan-alexander.png" alt=""> -->
+            <!-- <h1>ELCLOB</h1> -->
+        </div>
+        <!-- <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+        </div> -->
+        <!-- <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">About 1</a>
+            <a href="#">About 2</a>
+            <a href="#">About 3</a>
+        </div> -->
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                    <a href="https://www.facebook.com/Elclob/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/elclob/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
